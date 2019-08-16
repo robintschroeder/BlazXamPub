@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MSC.BlazXam.Config\MSC.BlazXam.Config.csproj" />
+    <ProjectReference Include="..\MSC.BlazXam.Models\MSC.BlazXam.Models.csproj" />
+  </ItemGroup>
+
+</Project>

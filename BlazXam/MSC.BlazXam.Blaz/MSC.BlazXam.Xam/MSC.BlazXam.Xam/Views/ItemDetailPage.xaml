@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MSC.BlazXam.Xam.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <StackLayout Orientation="Horizontal" Spacing="0">
+            <Label Text="{Binding City}" d:Text="New York" FontSize="Large" />
+            <Label Text=", " FontSize="Large" />
+            <Label Text="{Binding Country}" d:Text="United States" FontSize="Large" />
+        </StackLayout>
+        <Label Text="CurrentWeather:" FontSize="Medium" />
+        <Label Text="{Binding CurrentWeather.WeatherText}" d:Text="Cloudy" FontSize="Medium" FontAttributes="Bold" />
+        <Label Text="Current Temp (Metric):" FontSize="Medium" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding CurrentWeather.Temperature.Metric.Value}" d:Text="50" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="{Binding CurrentWeather.Temperature.Metric.Unit}" d:Text="C" FontSize="Medium" FontAttributes="Bold" />
+        </StackLayout>
+        <Label Text="Current Temp (Imperial):" FontSize="Medium" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding CurrentWeather.Temperature.Imperial.Value}" d:Text="50" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="{Binding CurrentWeather.Temperature.Imperial.Unit}" d:Text="F" FontSize="Medium" FontAttributes="Bold" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
