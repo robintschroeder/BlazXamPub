@@ -10,9 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MSC.BlazXam.BizLogic\MSC.BlazXam.BizLogic.csproj" />
-    <ProjectReference Include="..\..\..\MSC.BlazXam.Config\MSC.BlazXam.Config.csproj" />
-    <ProjectReference Include="..\..\..\MSC.BlazXam.Models\MSC.BlazXam.Models.csproj" />
+    <ProjectReference Include="..\..\MSC.BlazXam.BizLogic\MSC.BlazXam.BizLogic.csproj" />
+    <ProjectReference Include="..\..\MSC.BlazXam.Config\MSC.BlazXam.Config.csproj" />
+    <ProjectReference Include="..\..\MSC.BlazXam.Models\MSC.BlazXam.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

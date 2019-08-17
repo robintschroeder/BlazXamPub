@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Blaz", "MSC.BlazXam.Blaz\MSC.BlazXam.Blaz.csproj", "{0E3AE421-DF20-46AD-BB23-BFC2B729D9C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Models", "..\MSC.BlazXam.Models\MSC.BlazXam.Models.csproj", "{BCD6342F-7E56-4431-B94E-E0F818F36231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Models", "MSC.BlazXam.Models\MSC.BlazXam.Models.csproj", "{BCD6342F-7E56-4431-B94E-E0F818F36231}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.BizLogic", "..\MSC.BlazXam.BizLogic\MSC.BlazXam.BizLogic.csproj", "{0F7BEE5C-6045-4268-A2CE-62B4C31A8329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.BizLogic", "MSC.BlazXam.BizLogic\MSC.BlazXam.BizLogic.csproj", "{0F7BEE5C-6045-4268-A2CE-62B4C31A8329}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSC.BlazXam.Xam.Android", "MSC.BlazXam.Xam\MSC.BlazXam.Xam.Android\MSC.BlazXam.Xam.Android.csproj", "{A153A47A-B964-418D-8416-11CB87EE065D}"
 EndProject
@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSC.BlazXam.Xam.iOS", "MSC.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Xam", "MSC.BlazXam.Xam\MSC.BlazXam.Xam\MSC.BlazXam.Xam.csproj", "{26A13A4E-B79C-4AED-97E9-84F5473C5065}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.BizLogicTest", "..\MSC.BlazXam.BizLogicTest\MSC.BlazXam.BizLogicTest.csproj", "{B0524B79-4A06-414C-BA49-68DB2E444A24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.BizLogicTest", "MSC.BlazXam.BizLogicTest\MSC.BlazXam.BizLogicTest.csproj", "{B0524B79-4A06-414C-BA49-68DB2E444A24}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Config", "..\MSC.BlazXam.Config\MSC.BlazXam.Config.csproj", "{46DEF1CF-4C05-4395-AD87-ACFDC7D9FEBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Config", "MSC.BlazXam.Config\MSC.BlazXam.Config.csproj", "{46DEF1CF-4C05-4395-AD87-ACFDC7D9FEBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
