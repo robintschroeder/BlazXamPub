@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.BizLogicTest", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSC.BlazXam.Config", "MSC.BlazXam.Config\MSC.BlazXam.Config.csproj", "{46DEF1CF-4C05-4395-AD87-ACFDC7D9FEBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSC.BlazXam.Blazor", "MSC.BlazXam.Blazor\MSC.BlazXam.Blazor.csproj", "{A301D30A-C779-440D-AE9C-2F31BCFEBB19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,18 @@ Global
 		{46DEF1CF-4C05-4395-AD87-ACFDC7D9FEBA}.Release|iPhone.Build.0 = Release|Any CPU
 		{46DEF1CF-4C05-4395-AD87-ACFDC7D9FEBA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{46DEF1CF-4C05-4395-AD87-ACFDC7D9FEBA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Release|iPhone.Build.0 = Release|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A301D30A-C779-440D-AE9C-2F31BCFEBB19}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

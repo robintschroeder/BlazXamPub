@@ -1,0 +1,48 @@
+﻿@page "/currentweather/{id}/{cityname}/{countryname}"
+@using MSC.BlazXam.BizLogic
+@using MSC.BlazXam.Models
+
+<h1>Current Weather Conditions</h1>
+
+@if (weather == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (weather.WeatherText == null)
+{
+    <p><em>Error... we couldn't find the city you are looking for!</em></p>
+}
+else
+{
+    <h3>@CityName, @CountryName</h3>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Current Weather: @weather.WeatherText</td>
+            </tr>
+            <tr>
+                <td>Current Temp (Metric): @weather.Temperature.Metric.Value  @weather.Temperature.Metric.Unit</td>
+            </tr>
+            <tr>
+                <td>Current Temp (Imperial): @weather.Temperature.Imperial.Value  @weather.Temperature.Imperial.Unit</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+    [Parameter]
+    public string CityName { get; set; }
+    [Parameter]
+    public string CountryName { get; set; }
+
+    AccuWeatherCurrentConditModel weather;
+
+    protected override async Task OnInitializedAsync()
+    {
+        weather = (await HTTPClientService.GetAccuWeatherCurrentConditionsDataAsync(Id));
+    }
+}
