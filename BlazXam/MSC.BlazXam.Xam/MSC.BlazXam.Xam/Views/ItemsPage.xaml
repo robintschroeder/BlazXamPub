@@ -7,14 +7,16 @@
              mc:Ignorable="d"
              xmlns:design="clr-namespace:MSC.BlazXam.Xam.ViewModelsDesign"
              Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
-    <StackLayout>
-        <Label Text="{Binding ItemsPageMessage}" FontSize="Large"
-               d:Text="{x:Static design:ItemsViewModel.ItemsPageMessage}"
-               HorizontalOptions="Center" VerticalOptions="Center" Margin="10" />
+             x:Name="BrowseItemsPage"
+             d:BindingContext="{x:Static design:ViewModelLocator.ItemsViewModel_2}">
+    <!-- d:BindingContext="{x:Static design:ViewModelLocator.ItemsViewModel_Empty}" -->
+    <Grid>
 
-        <ListView x:Name="ItemsListView"
-                d:ItemsSource="{x:Static design:ItemsViewModel.Items}"
+        <Label Grid.Row="0" Text="{Binding ItemsPageMessage}" FontSize="Large"
+               HorizontalOptions="Center" VerticalOptions="Center" Margin="10" />
+        <!-- d:Text="{x:Static design:ItemsViewModel.ItemsPageMessage}"-->
+
+        <ListView Grid.Row="0" x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="true"
@@ -39,5 +41,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+    </Grid>
 </ContentPage>

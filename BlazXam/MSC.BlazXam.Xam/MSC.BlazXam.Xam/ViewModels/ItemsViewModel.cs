@@ -12,7 +12,9 @@ namespace MSC.BlazXam.Xam.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        private string itemsPageMessage = string.Empty;
+        private bool _isShowEmptyItemsListMessage;
+        private ObservableCollection<Item> _items;
+        private string _itemsPageMessage;
 
         public ItemsViewModel()
         {
@@ -21,12 +23,22 @@ namespace MSC.BlazXam.Xam.ViewModels
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
 
-        public ObservableCollection<Item> Items { get; set; }
+        public bool IsShowEmptyItemsListMessage
+        {
+            get { return _isShowEmptyItemsListMessage; }
+            set { SetProperty(ref _isShowEmptyItemsListMessage, value); }
+        }
+
+        public ObservableCollection<Item> Items
+        {
+            get { return _items; }
+            set { SetProperty(ref _items, value); }
+        }
 
         public string ItemsPageMessage
         {
-            get { return itemsPageMessage; }
-            set { SetProperty(ref itemsPageMessage, value); }
+            get { return _itemsPageMessage; }
+            set { SetProperty(ref _itemsPageMessage, value); }
         }
 
         public Command LoadItemsCommand { get; set; }
@@ -46,7 +58,17 @@ namespace MSC.BlazXam.Xam.ViewModels
                 {
                     Items.Add(item);
                 }
-                ItemsPageMessage = (Items.Count == 0) ? "No Cities Returned! API only allows 50 calls per day!" : string.Empty;
+
+                if (Items.Count == 0)
+                {
+                    IsShowEmptyItemsListMessage = true;
+                    ItemsPageMessage = "No Cities Returned! API only allows 50 calls per day!";
+                }
+                else
+                {
+                    IsShowEmptyItemsListMessage = false;
+                    ItemsPageMessage = string.Empty;
+                }
             }
             catch (Exception ex)
             {
